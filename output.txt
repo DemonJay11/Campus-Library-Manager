@@ -1,0 +1,35 @@
+========== BORROWING ITEMS ==========
+Alice borrowed: Book: Python 101 by A. Rao (ID 1)
+Alice borrowed: DVD: Python - Zero to Hero, Duration 90 minutes (ID 3)
+
+========== ITEM AVAILABILITY ==========
+Could not borrow: 'Python 101' is already borrowed by someone else
+
+========== DUPLICATE BORROWING ==========
+Could not borrow: Alice has already borrowed 'Python 101'
+
+========== BORROWING LIMIT ==========
+Bob borrowed: Magazine: Naruto, Issue 102 (ID 2)
+Could not borrow: 'Python - Zero to Hero' is already borrowed by someone else
+
+========== INVALID RETURN ==========
+Could not return: 'Python - Zero to Hero' was not borrowed by Bob
+
+========== VALID RETURN ==========
+Magazine returned successfully.
+Late fee: Rs 7
+
+========== POLYMORPHISM ==========
+Book: Python 101 by A. Rao (ID 1) -> Late fee for 3 days: Rs 6
+Magazine: Naruto, Issue 102 (ID 2) -> Late fee for 3 days: Rs 3
+DVD: Python - Zero to Hero, Duration 90 minutes (ID 3) -> Late fee for 3 days: Rs 15
+
+========== CLASS ATTRIBUTE ==========
+Total items created: 3
+
+========== BORROWED TITLES ==========
+Alice: ['Python 101', 'Python - Zero to Hero']
+Bob: []
+
+========== ENCAPSULATION ==========
+Cannot access private availability directly.
